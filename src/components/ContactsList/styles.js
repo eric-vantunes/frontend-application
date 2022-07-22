@@ -24,10 +24,36 @@ export const Header = styled.header`
     transition: all 0.2s ease-in;
 
     &:hover {
-     background: ${({ theme }) => theme.colors.primary.main};
-     color: #fff;
+      background: ${({ theme }) => theme.colors.primary.main};
+      color: #fff;
     }
   }
 `;
 
-export const ListContainer = styled.div``;
+export const ListContainer = styled.div`
+  margin-top: 24px;
+
+  header {
+    margin-bottom: 8px;
+
+    button {
+      background: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-right: 8px;
+        font-weight: bold;
+        color: ${({ theme }) => theme.colors.primary.main};
+      }
+    }
+  }
+`;
+
+export const Card = styled.div`
+  background: #FFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+  padding: 16px;
+  border-radius: 4px;
+`;
